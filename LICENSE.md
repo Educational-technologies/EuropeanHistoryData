@@ -1,3 +1,5 @@
+GNU GPLv3
+
 EuropeanHistoryData 
 Copyright (C) 2024  Moodo9
 

@@ -1,0 +1,10 @@
+{
+  "title": "The Scientific Revolution",
+  "date": "17th Century",
+  "dateValue": 1600,
+  "type": "idea",
+  "tags": [
+    "important_date"
+  ],
+  "summary": "The Scientific Revoltution was founded around #{skepticism} of old Greco-Roman ideas held as truth for hundreds of years. Instead of tradition, it favored the development of new ideas through rationalism and #{empiricism}."
+}

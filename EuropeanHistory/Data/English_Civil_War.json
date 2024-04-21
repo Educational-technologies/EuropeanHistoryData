@@ -1,0 +1,10 @@
+{
+  "title": "English Civil War",
+  "date": "1642-1644",
+  "dateValue": 1642,
+  "type": "war",
+  "tags": [
+    "important_date"
+  ],
+  "summary": "The English Civil War was fought between the monarchal forces loyal to %{Charles I}  against the #{Protestant} Parliamentary forces who felt that their influence was being curbed  by the monarch. Eventually, the parliamentary forces defeat the monarchy and executed Charles I, placing %{Oliver Cromwell}, the leader of the parliamentary forces, as defacto military dictator of England."
+}

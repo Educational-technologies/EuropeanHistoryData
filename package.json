@@ -1,0 +1,26 @@
+{
+  "name": "europeanhistorydata",
+  "version": "1.0.0",
+  "description": "This data can be used in application to study for AP euro please report factual inaccuracy's by creating a new issue.",
+  "main": "Build.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node EuropeanHistory\\Tools\\Build.js",
+    "jsonify": "node EuropeanHistory\\Tools\\JSONIfyArray.js",
+    "search": "node EuropeanHistory\\Tools\\Helper.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Educational-technologies/EuropeanHistoryData.git"
+  },
+  "keywords": [
+    "european-history"
+  ],
+  "author": "Moodo9",
+  "license": "CC-BY-NC-4.0",
+  "bugs": {
+    "url": "https://github.com/Educational-technologies/EuropeanHistoryData/issues"
+  },
+  "homepage": "https://github.com/Educational-technologies/EuropeanHistoryData#readme",
+  "type": "module"
+}

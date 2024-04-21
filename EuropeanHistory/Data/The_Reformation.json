@@ -1,0 +1,11 @@
+{
+  "title": "The Reformation",
+  "date": "16th Century",
+  "dateValue": 1500,
+  "type": "idea",
+  "tags": [
+    "important_date",
+    "reformation"
+  ],
+  "summary": "The Reformation saw the development of new #{Protestant} Christian denominations which opposed Catholicism. Beginning with %{Lutheranism}, the category eventually came to encompass a variety of subjects, including %{Calvinism}, %{Zwinglism}, and %{Anabaptism}."
+}

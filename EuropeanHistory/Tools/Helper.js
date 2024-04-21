@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { fileURLToPath, pathToFileURL } from 'url';
+import { fileURLToPath } from 'url';
 import * as readline from "readline";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));

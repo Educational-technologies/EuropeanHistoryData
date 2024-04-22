@@ -4,9 +4,14 @@ This data can be used in applications to study for AP euro please report factual
 # Contributing 
 Please create a new branch and add what you want, when you are ready make a pull request and it will be reviewed to see if it meets the standards. 
 ### Startup
-after creating a new branch and pulling the main run ```npm i``` to set everything up you can run three commands in the terminal, 
+after creating a new branch and pulling the main run ```npm i``` to set everything up. 
+
+You can also run three helper commands in the terminal:
+
 ```npm run build``` - This will put together all the info in all the JSON files and output it into one file
+
 ```npm run jsonify``` - It will generate JSON files based on what is placed in this file -> <https://github.com/Educational-technologies/EuropeanHistoryData/blob/main/TimeLineData.js> 
+
 ```npm run search``` It allows you to search all the .json files to see if something already has been made **IT is still a WIP** so if you are not sure if something hasn't already been created then just manually check. 
 
 ### Information 

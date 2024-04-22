@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node EuropeanHistory/Tools/Build.js",
     "jsonify": "node EuropeanHistory\\Tools\\JSONIfyArray.js",
-    "search": "node EuropeanHistory\\Tools\\Helper.js"
+    "search": "node EuropeanHistory\\Tools\\Helper.js",
+    "find": "node EuropeanHistory\\Tools\\Find.js"
   },
   "repository": {
     "type": "git",

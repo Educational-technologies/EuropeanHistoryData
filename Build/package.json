@@ -1,6 +1,6 @@
 {
   "name": "apeurodata",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "It provides a timeordered list of AP euro topics",
   "main": "index.js",
   "scripts": {

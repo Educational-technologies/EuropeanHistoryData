@@ -4,6 +4,7 @@ import { fileURLToPath, pathToFileURL } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const eventsPath = path.join(__dirname, "..", 'Data');  // Path where JSON files will be saved
+const definitionsPath = path.join(__dirname, "..", 'Definitions');  // Path where JSON files will be saved
 
 // Check for the '-def' argument
 const includeDefinitions = process.argv.includes('-def');
@@ -28,8 +29,21 @@ async function createJSONFiles() {
             if (includeDefinitions) {
                 // You can do like "Nationalism&Nationalist:"def" and then parse that as two things?
                 // Additional logic for definitions
-                console.log("Currently definitions are not supported, as some have the same values, i will figure it out soon!");
-            } else {
+                Object.keys(Definitions).forEach(definition => {
+                    const parts = definition.split(' ');
+                    const transformed = parts.map(part => part.charAt(0).toUpperCase() + part.slice(1)).join('_');
+
+                    const filename = `${transformed}.json`;
+                    const filepath = path.join(definitionsPath, filename);
+
+                    const item = {};
+                    item[definition] = Definitions[definition];
+
+                    const jsonString = JSON.stringify(item);
+
+                    fs.writeFileSync(filepath, jsonString, 'utf8');
+                });
+            }
                 // Handle regular data processing
                 TimeLineData.forEach(event => {
                     const filename = `${event.title.replace(/ /g, '_')}.json`;
@@ -43,6 +57,7 @@ async function createJSONFiles() {
                 process.stdin.on('data', (input) => {
                     if (input.toString().trim() === 'y') {
                         let fileString = "export const TimeLineData = [];\nexport const Definitions = {\n";
+                        if(!includeDefinitions){
                         Object.keys(Definitions).forEach(key => {
                             // Use JSON.stringify to escape special characters in key and value
                             const escapedKey = JSON.stringify(key);
@@ -52,13 +67,14 @@ async function createJSONFiles() {
                             fileString += `    ${escapedKey}: ${escapedValue},\n`;
                         });
                         fileString += "};\n";
-
+                        } else {
+                            fileString += "\n};\n";
+                        }
                         fs.writeFileSync(timeLineDataPath, fileString, 'utf8');
                         console.log('TimeLineData.js has been cleared.');
                     }
                     process.exit();
                 });
-            }
         } else {
             throw new Error("TimeLineData.js does not exist in the specified path.");
         }

@@ -1,0 +1,20 @@
+{
+  "name": "apeurodata",
+  "version": "1.0.0",
+  "description": "It provides a timeordered list of AP euro topics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Educational-technologies/EuropeanHistoryData.git"
+  },
+  "author": "Moodo9",
+  "license": "CC-BY-NC-4.0",
+  "bugs": {
+    "url": "https://github.com/Educational-technologies/EuropeanHistoryData/issues"
+  },
+  "homepage": "https://github.com/Educational-technologies/EuropeanHistoryData#readme",
+  "type": "module"
+}

@@ -5,7 +5,7 @@
   "main": "Build.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node EuropeanHistory\\Tools\\Build.js",
+    "build": "node EuropeanHistory/Tools/Build.js",
     "jsonify": "node EuropeanHistory\\Tools\\JSONIfyArray.js",
     "search": "node EuropeanHistory\\Tools\\Helper.js"
   },
